@@ -34,3 +34,7 @@ resource "aws_security_group" "allow-tls" {
 
   }
 }
+
+output "public-ip" {
+  value       = aws_instance.instance.public_ip
+}
