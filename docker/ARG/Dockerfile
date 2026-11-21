@@ -3,3 +3,4 @@ FROM almalinux:${version}
 ENV project="docker"\
     env="aws"
 RUN echo "version:${version}">>/tmp/devops.txt
+CMD ["sleep","100"]
